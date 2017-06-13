@@ -1,8 +1,8 @@
-NCSS
-====
+NCSS Documentation
+==================
 
-> NCSS is a naming convention for semantic CSS. Get rid of reading your HTML again and again to find out what elements, tags and sections are affected.
+> Documentation for NCSS.
 
-[![Build Status](https://img.shields.io/travis/redaxmedia/ncss.svg)](https://travis-ci.org/redaxmedia/ncss)
-[![Dependency Status](https://gemnasium.com/badges/github.com/redaxmedia/ncss.svg)](https://gemnasium.com/github.com/redaxmedia/ncss)
-[![GitHub Stats](https://img.shields.io/badge/github-stats-ff5500.svg)](http://githubstats.com/redaxmedia/ncss)
+[![Build Status](https://img.shields.io/travis/redaxmedia/ncss-documentation.svg)](https://travis-ci.org/redaxmedia/ncss-documentation)
+[![Dependency Status](https://gemnasium.com/badges/github.com/redaxmedia/ncss-documentation.svg)](https://gemnasium.com/github.com/redaxmedia/ncss-documentation)
+[![GitHub Stats](https://img.shields.io/badge/github-stats-ff5500.svg)](http://githubstats.com/redaxmedia/ncss-documentation)
