@@ -1,0 +1,20 @@
+{
+	"name": "ncss-documentation",
+	"description": "Documentation for NCSS",
+	"version": "1.0.0",
+	"homepage": "https://docs.ncss.io",
+	"license": "GPL-3.0",
+	"author":
+	{
+		"name": "Henry Ruhs",
+		"url": "https://redaxmedia.com"
+	},
+	"devDependencies":
+	{
+		"markdown-spellcheck": "0.11.0"
+	},
+	"scripts":
+	{
+		"test": "node_modules/markdown-spellcheck/bin/mdspell documentation/**/* --ignore-numbers --report"
+	}
+}
