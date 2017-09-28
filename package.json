@@ -11,10 +11,9 @@
 	},
 	"devDependencies":
 	{
-		"markdown-spellcheck": "0.11.0"
-	},
-	"scripts":
-	{
-		"test": "node_modules/markdown-spellcheck/bin/mdspell documentation/**/* --ignore-numbers --report"
+		"grunt": "1.0.1",
+		"grunt-http": "2.2.0",
+		"grunt-mdspell": "0.4.0",
+		"load-grunt-tasks": "3.5.2"
 	}
 }
