@@ -1,8 +1,8 @@
-module.exports = function ()
+module.exports = () =>
 {
 	'use strict';
 
-	var config =
+	const config =
 	{
 		documentation:
 		{
@@ -10,7 +10,10 @@ module.exports = function ()
 			{
 				src:
 				[
-					'documentation/**/*.md'
+					'documentation/**/*.md',
+					'!documentation/02.classes/03.structural-classes.md',
+					'!documentation/02.classes/05.type-classes.md',
+					'!documentation/02.classes/07.functional-classes.md'
 				]
 			},
 			options:
