@@ -1,11 +1,10 @@
 language: nodejs
 
 node_js:
-- 6
+- 9
 
 install:
-- npm install --global ied
-- ied install
+- npm install
 
 script:
 - grunt
