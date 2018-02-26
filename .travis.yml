@@ -4,9 +4,8 @@ node_js:
 - 9
 
 install:
-- npm cache clear
-- npm install --global grunt-cli
-- npm install
+- npm install --global ied
+- ied install
 
 script:
 - grunt
