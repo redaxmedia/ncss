@@ -4,6 +4,7 @@ node_js:
 - 9
 
 install:
+- npm cache clear
 - npm install --global grunt-cli
 - npm install
 
