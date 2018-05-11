@@ -15,7 +15,7 @@ module.exports = () =>
 					'Content-Type': 'application/json',
 					'Accept': 'application/json',
 					'Travis-API-Version': 3,
-					'Authorization': 'Token ' + process.env.TRAVIS_TOKEN
+					'Authorization': 'token ' + process.env.TRAVIS_TOKEN
 				}
 			}
 		}

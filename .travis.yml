@@ -4,8 +4,7 @@ node_js:
 - 9
 
 install:
-- npm install --global ied
-- ied install
+- npm install
 
 script:
 - grunt
