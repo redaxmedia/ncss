@@ -1,10 +1,10 @@
 language: nodejs
 
 node_js:
-- 10
+- 9
 
 install:
-- yarn install
+- npm install
 
 script:
 - grunt
