@@ -1,7 +1,7 @@
 {
 	"name": "redaxmedia/ncss-documentation",
 	"description": "Documentation for NCSS",
-	"version": "4.0.0",
+	"version": "4.3.1",
 	"homepage": "https://ncss.io",
 	"license": "GPL-3.0"
 }

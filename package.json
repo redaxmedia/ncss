@@ -1,7 +1,7 @@
 {
 	"name": "ncss-documentation",
 	"description": "Documentation for NCSS",
-	"version": "4.0.0",
+	"version": "4.3.1",
 	"homepage": "https://ncss.io",
 	"license": "GPL-3.0",
 	"author":
@@ -11,7 +11,7 @@
 	},
 	"devDependencies":
 	{
-		"grunt": "1.0.4",
+		"grunt": "1.2.1",
 		"grunt-http": "2.3.3",
 		"grunt-mdspell": "0.4.0",
 		"load-grunt-tasks": "5.1.0"
