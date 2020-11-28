@@ -7,13 +7,16 @@ module.exports = () =>
 			options:
 			{
 				method: 'post',
-				url: 'https://api.travis-ci.org/repo/redaxmedia%2Fncss-documentation-sync/requests',
+				url: 'https://api.github.com/repos/redaxmedia/ncss-documentation-sync/actions/workflows/ci.yaml/dispatches',
 				headers:
 				{
 					'Content-Type': 'application/json',
-					'Accept': 'application/json',
-					'Travis-API-Version': 3,
-					'Authorization': 'token ' + process.env.TRAVIS_TOKEN
+					'Accept': 'application/vnd.github.everest-preview+json',
+					'Authorization': 'token ' + process.env.GITHUB_TOKEN
+				},
+				body:
+				{
+					ref: 'master'
 				}
 			}
 		}

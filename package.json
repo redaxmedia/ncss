@@ -1,9 +1,9 @@
 {
 	"name": "ncss-documentation",
 	"description": "Documentation for NCSS",
-	"version": "4.3.1",
+	"version": "1.0.0",
 	"homepage": "https://ncss.io",
-	"license": "GPL-3.0",
+	"license": "MIT",
 	"author":
 	{
 		"name": "Henry Ruhs",
@@ -11,7 +11,7 @@
 	},
 	"devDependencies":
 	{
-		"grunt": "1.2.1",
+		"grunt": "1.3.0",
 		"grunt-http": "2.3.3",
 		"grunt-mdspell": "0.4.0",
 		"load-grunt-tasks": "5.1.0"
