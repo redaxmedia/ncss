@@ -1,0 +1,30 @@
+name: ci
+
+on: [ push, pull_request ]
+
+jobs:
+ lint:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Set up Node 15
+    uses: actions/setup-node@v1
+    with:
+     node-version: 15
+  - run: npm install --legacy-peer-deps
+  - run: node_modules/.bin/grunt
+ trigger:
+  needs: lint
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Set up Node 15
+    uses: actions/setup-node@v1
+    with:
+     node-version: 15
+  - run: npm install --legacy-peer-deps
+  - run: node_modules/.bin/grunt trigger
+    env:
+     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

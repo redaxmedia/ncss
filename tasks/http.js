@@ -6,15 +6,18 @@ module.exports = () =>
 		{
 			options:
 			{
-				method: 'post',
-				url: 'https://api.travis-ci.org/repo/redaxmedia%2Fncss-documentation-sync/requests',
+				method: 'POST',
+				url: 'https://api.github.com/repos/redaxmedia/ncss-documentation-sync/actions/workflows/ci.yml/dispatches',
 				headers:
 				{
-					'Content-Type': 'application/json',
-					'Accept': 'application/json',
-					'Travis-API-Version': 3,
-					'Authorization': 'token ' + process.env.TRAVIS_TOKEN
-				}
+					'Accept': 'application/vnd.github.v3+json',
+					'Authorization': 'token ' + process.env.GITHUB_TOKEN,
+					'User-Agent': 'ncss-documentation'
+				},
+				body: JSON.stringify(
+				{
+					ref: 'master'
+				})
 			}
 		}
 	};
