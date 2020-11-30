@@ -6,18 +6,18 @@ module.exports = () =>
 		{
 			options:
 			{
-				method: 'post',
-				url: 'https://api.github.com/repos/redaxmedia/ncss-documentation-sync/actions/workflows/ci.yaml/dispatches',
+				method: 'POST',
+				url: 'https://api.github.com/repos/redaxmedia/ncss-documentation-sync/actions/workflows/ci.yml/dispatches',
 				headers:
 				{
-					'Content-Type': 'application/json',
-					'Accept': 'application/vnd.github.everest-preview+json',
-					'Authorization': 'token ' + process.env.GITHUB_TOKEN
+					'Accept': 'application/vnd.github.v3+json',
+					'Authorization': 'token ' + process.env.GITHUB_TOKEN,
+					'User-Agent': 'ncss-documentation'
 				},
-				body:
+				body: JSON.stringify(
 				{
 					ref: 'master'
-				}
+				})
 			}
 		}
 	};
