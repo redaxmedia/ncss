@@ -11,7 +11,7 @@ module.exports = () =>
 				headers:
 				{
 					'Accept': 'application/vnd.github.v3+json',
-					'Authorization': 'token ' + process.env.GITHUB_TOKEN,
+					'Authorization': 'token ' + process.env.TRIGGER_TOKEN,
 					'User-Agent': 'ncss-documentation'
 				},
 				body: JSON.stringify(
