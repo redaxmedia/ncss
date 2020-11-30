@@ -27,4 +27,4 @@ jobs:
   - run: npm install --legacy-peer-deps
   - run: node_modules/.bin/grunt trigger
     env:
-     GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+     TRIGGER_TOKEN: ${{ secrets.TRIGGER_TOKEN }}
