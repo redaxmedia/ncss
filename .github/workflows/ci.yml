@@ -13,7 +13,7 @@ jobs:
     with:
      node-version: 15
   - run: npm install --legacy-peer-deps
-  - run: node_modules/.bin/grunt
+  - run: grunt
  trigger:
   needs: lint
   runs-on: ubuntu-latest
