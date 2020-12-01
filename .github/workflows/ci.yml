@@ -25,6 +25,6 @@ jobs:
     with:
      node-version: 15
   - run: npm install --legacy-peer-deps
-  - run: node_modules/.bin/grunt trigger
+  - run: grunt trigger
     env:
      TRIGGER_TOKEN: ${{ secrets.TRIGGER_TOKEN }}
