@@ -12,7 +12,7 @@ module.exports = () =>
 				{
 					'Accept': 'application/vnd.github.v3+json',
 					'Authorization': 'token ' + process.env.TRIGGER_TOKEN,
-					'User-Agent': 'trigger'
+					'User-Agent': 'ncss-documentation'
 				},
 				body: JSON.stringify(
 				{
